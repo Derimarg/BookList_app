@@ -21,11 +21,11 @@ class UI {
     const row = document.createElement("tr");
 
     row.innerHTML = `
-        <td>${book.title}</td>
-        <td>${book.author}</td>
-        <td>${book.isbn}</td>
-        <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
-      `;
+      <td>${book.title}</td>
+      <td>${book.author}</td>
+      <td>${book.isbn}</td>
+      <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
+    `;
 
     list.appendChild(row);
   }
@@ -43,7 +43,8 @@ class UI {
     const container = document.querySelector(".container");
     const form = document.querySelector("#book-form");
     container.insertBefore(div, form);
-    // vanish in 3 seconds
+
+    // Vanish in 3 seconds
     setTimeout(() => document.querySelector(".alert").remove(), 2000);
   }
 
@@ -57,12 +58,13 @@ class UI {
 // Store Class: Handles Storage
 class Store {
   static getBooks() {
-    let getBooks;
+    let books;
     if (localStorage.getItem("books") === null) {
       books = [];
     } else {
       books = JSON.parse(localStorage.getItem("books"));
     }
+
     return books;
   }
 
