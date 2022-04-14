@@ -28,7 +28,7 @@ A full app in JavaScript without and library or JS framework, using classes, loc
 <br />
 <br />
 
-> Link web page: http://Derimarg.github.io/BookList_App
+> Link web page: https://derimarg.github.io/BookList_app/
 
 <details open="open">
 <summary>Table of Contents</summary>
@@ -51,7 +51,43 @@ A full app in JavaScript without and library or JS framework, using classes, loc
 
 This is a single-page application, will follow the next conditions:
 
-- Loading a list of books.
+```
+// Book Class: Represents a Book
+
+// UI Class: Handle UI Tasks
+
+    // Vanish alert in 2 seconds
+
+
+// Store Class: Handles Storage
+
+// Event: Display Books
+
+// Event: Add a Book
+  // Prevent actual submit
+  // Get form values
+
+  // Validate
+    if valid
+    // alert("Please fill in all fields");
+    else
+    // Instatiate book
+    // Add Book to UI
+    // Add Book to localStorage
+    // Show success message
+    // Clear fields
+
+
+
+
+// Event: Remove a Book
+
+  // Remove book from UI
+
+  // Remove book from localStore
+
+  // Show success message
+```
 
 <br />
 <br />
@@ -61,7 +97,7 @@ This is a single-page application, will follow the next conditions:
 
 <br />
 
-![Demo](./src/assets/img/demo/demo.jpg)
+![Demo](./assets/img/demo.png)
 
 <br />
 
